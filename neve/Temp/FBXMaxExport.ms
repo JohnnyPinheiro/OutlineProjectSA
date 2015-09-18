@@ -26,18 +26,18 @@ fn DialogCallback =
 pluginManager.loadClass FBXIMP;
 pluginManager.loadClass FBXEXP;
 
-openLog "C:/Users/Johnny/Desktop/OUTLIN~1/neve/Temp/3dsMax.log" mode:"w"
+openLog "C:/Users/LuaN/DOCUME~1/OUTLIN~1/neve/Temp/3dsMax.log" mode:"w"
 print "Start of log file."; flushLog();
 while true do
 (	
-	if ( fileExists "C:/Users/Johnny/Desktop/OUTLIN~1/neve/Temp/MaxCommandPipe" ) then
+	if ( fileExists "C:/Users/LuaN/DOCUME~1/OUTLIN~1/neve/Temp/MaxCommandPipe" ) then
 	(
 		exportNormals = false;
 		exportTangents = false;
 		bakeAnimations = false;
 		useFileUnits = false;
 	
-		waitpipe = (openFile "C:/Users/Johnny/Desktop/OUTLIN~1/neve/Temp/MaxCommandPipe" mode:"r");
+		waitpipe = (openFile "C:/Users/LuaN/DOCUME~1/OUTLIN~1/neve/Temp/MaxCommandPipe" mode:"r");
 		filename = (readLine waitpipe);
 		
 		for i = 0 to 3 do
@@ -143,7 +143,7 @@ while true do
 					print "Before fbx export"; flushLog();
 					try
 					(
-						exportFile "C:/Users/Johnny/Desktop/OUTLIN~1/neve/Temp/MaxExportedFBXFile.fbx" #noprompt;
+						exportFile "C:/Users/LuaN/DOCUME~1/OUTLIN~1/neve/Temp/MaxExportedFBXFile.fbx" #noprompt;
 					)
 					catch
 					(
@@ -152,7 +152,7 @@ while true do
 					print "After fbx export"; flushLog();
 				)
 
-				deleteFile "C:/Users/Johnny/Desktop/OUTLIN~1/neve/Temp/MaxCommandPipe";
+				deleteFile "C:/Users/LuaN/DOCUME~1/OUTLIN~1/neve/Temp/MaxCommandPipe";
 				print "Finished max loading and fbx conversion"; flushLog();
 			) -- with defaultAction
 		)

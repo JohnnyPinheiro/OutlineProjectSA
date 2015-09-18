@@ -1,8 +1,9 @@
 -debug
 -target:library
 -nowarn:0169
--out:Temp/Assembly-CSharp-firstpass.dll
+-out:Temp/Assembly-CSharp.dll
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
@@ -68,14 +69,7 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_WIN
 -define:CROSS_PLATFORM_INPUT
-"Assets/Standard Assets/Environment/Water (Basic)/Scripts/WaterBasic.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/Displace.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/GerstnerDisplace.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/MeshContainer.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/PlanarReflection.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/SpecularLighting.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/Water.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/WaterBase.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/WaterTile.cs"
+Assets/Script/movePersonagem.cs
+Assets/Script/moviMapa.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: aa4c4b2d94fba8f469c36305a6678282
-timeCreated: 1442449558
+guid: dcaccec01611e024884511ec75278312
+timeCreated: 1442535455
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -183,8 +183,10 @@ ModelImporter:
     4300026: mesh1
     4300028: mesh0
     4300030: Capsule001
-    7400000: esq
-    7400002: dir
+    7400000: deslize direito
+    7400002: delize equerdo
+    7400004: pulo
+    7400006: neutro
     9500000: //RootNode
     13700000: mesh0
     13700002: mesh1
@@ -222,10 +224,196 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: esq
+      name: deslize direito
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 50
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Capsule001
+        weight: 1
+      - path: J_root_181
+        weight: 1
+      - path: J_root_181/J_center
+        weight: 1
+      - path: J_root_181/J_center/J_hara
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_kubi
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_kubi/J_atama
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_kubi/J_atama/J_end1
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_kubi/J_atama/loc_020
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji/J_Lte
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji/J_Lte/J_Loyayubi
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji/J_Lte/J_Loyayubi/J_end5
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji/J_Lte/J_Lyubi
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji/J_Lte/J_Lyubi/J_end4
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji/J_Rte
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji/J_Rte/J_Royayubi
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji/J_Rte/J_Royayubi/J_end7
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji/J_Rte/J_Ryubi
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji/J_Rte/J_Ryubi/J_end6
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/loc_021
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo/J_Lhiza
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo/J_Lhiza/J_Lashi
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo/J_Lhiza/J_Lashi/J_Ltuma
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo/J_Lhiza/J_Lashi/J_Ltuma/J_end8
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo/J_Lhiza/J_Lashi/loc_010
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo/J_Rhiza
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo/J_Rhiza/J_Rashi
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo/J_Rhiza/J_Rashi/J_Rtuma
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo/J_Rhiza/J_Rashi/J_Rtuma/J_end9
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo/J_Rhiza/J_Rashi/loc_011
+        weight: 1
+      - path: J_root_181/loc_001
+        weight: 1
+      - path: md181_asiL
+        weight: 1
+      - path: md181_asiR
+        weight: 1
+      - path: md181_atama
+        weight: 1
+      - path: md181_dou
+        weight: 1
+      - path: md181_kosi
+        weight: 1
+      - path: md181_kubi
+        weight: 1
+      - path: md181_teL
+        weight: 1
+      - path: md181_teR
+        weight: 1
+      - path: md181_udeL
+        weight: 1
+      - path: md181_udeR
+        weight: 1
+      - path: mesh0
+        weight: 1
+      - path: mesh0/Null.15
+        weight: 1
+      - path: mesh1
+        weight: 1
+      - path: mesh1/Null.14
+        weight: 1
+      - path: mesh2
+        weight: 1
+      - path: mesh2/Null.13
+        weight: 1
+      - path: mesh3
+        weight: 1
+      - path: mesh3/Null.12
+        weight: 1
+      - path: mesh4
+        weight: 1
+      - path: mesh4/Null.11
+        weight: 1
+      - path: mesh5
+        weight: 1
+      - path: mesh5/Null.10
+        weight: 1
+      - path: mesh6
+        weight: 1
+      - path: mesh6/Null.9
+        weight: 1
+      - path: mesh7
+        weight: 1
+      - path: mesh7/Null.8
+        weight: 1
+      - path: mesh8
+        weight: 1
+      - path: mesh8/Null.7
+        weight: 1
+      - path: mesh9
+        weight: 1
+      - path: mesh9/Null.6
+        weight: 1
+      - path: mesh10
+        weight: 1
+      - path: mesh10/Null.5
+        weight: 1
+      - path: mesh11
+        weight: 1
+      - path: mesh11/Null.4
+        weight: 1
+      - path: mesh12
+        weight: 1
+      - path: mesh12/Null.3
+        weight: 1
+      - path: mesh13
+        weight: 1
+      - path: mesh13/Null.2
+        weight: 1
+      - path: mesh14
+        weight: 1
+      - path: mesh14/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: delize equerdo
+      takeName: Take 001
+      firstFrame: 16
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -408,10 +596,196 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: dir
+      name: pulo
       takeName: Take 001
-      firstFrame: 51
-      lastFrame: 100
+      firstFrame: 31
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Capsule001
+        weight: 1
+      - path: J_root_181
+        weight: 1
+      - path: J_root_181/J_center
+        weight: 1
+      - path: J_root_181/J_center/J_hara
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_kubi
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_kubi/J_atama
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_kubi/J_atama/J_end1
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_kubi/J_atama/loc_020
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji/J_Lte
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji/J_Lte/J_Loyayubi
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji/J_Lte/J_Loyayubi/J_end5
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji/J_Lte/J_Lyubi
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Lkata/J_Lude/J_Lhiji/J_Lte/J_Lyubi/J_end4
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji/J_Rte
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji/J_Rte/J_Royayubi
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji/J_Rte/J_Royayubi/J_end7
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji/J_Rte/J_Ryubi
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/J_Rkata/J_Rude/J_Rhiji/J_Rte/J_Ryubi/J_end6
+        weight: 1
+      - path: J_root_181/J_center/J_hara/J_mune/loc_021
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo/J_Lhiza
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo/J_Lhiza/J_Lashi
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo/J_Lhiza/J_Lashi/J_Ltuma
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo/J_Lhiza/J_Lashi/J_Ltuma/J_end8
+        weight: 1
+      - path: J_root_181/J_center/J_Lmomo/J_Lhiza/J_Lashi/loc_010
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo/J_Rhiza
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo/J_Rhiza/J_Rashi
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo/J_Rhiza/J_Rashi/J_Rtuma
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo/J_Rhiza/J_Rashi/J_Rtuma/J_end9
+        weight: 1
+      - path: J_root_181/J_center/J_Rmomo/J_Rhiza/J_Rashi/loc_011
+        weight: 1
+      - path: J_root_181/loc_001
+        weight: 1
+      - path: md181_asiL
+        weight: 1
+      - path: md181_asiR
+        weight: 1
+      - path: md181_atama
+        weight: 1
+      - path: md181_dou
+        weight: 1
+      - path: md181_kosi
+        weight: 1
+      - path: md181_kubi
+        weight: 1
+      - path: md181_teL
+        weight: 1
+      - path: md181_teR
+        weight: 1
+      - path: md181_udeL
+        weight: 1
+      - path: md181_udeR
+        weight: 1
+      - path: mesh0
+        weight: 1
+      - path: mesh0/Null.15
+        weight: 1
+      - path: mesh1
+        weight: 1
+      - path: mesh1/Null.14
+        weight: 1
+      - path: mesh2
+        weight: 1
+      - path: mesh2/Null.13
+        weight: 1
+      - path: mesh3
+        weight: 1
+      - path: mesh3/Null.12
+        weight: 1
+      - path: mesh4
+        weight: 1
+      - path: mesh4/Null.11
+        weight: 1
+      - path: mesh5
+        weight: 1
+      - path: mesh5/Null.10
+        weight: 1
+      - path: mesh6
+        weight: 1
+      - path: mesh6/Null.9
+        weight: 1
+      - path: mesh7
+        weight: 1
+      - path: mesh7/Null.8
+        weight: 1
+      - path: mesh8
+        weight: 1
+      - path: mesh8/Null.7
+        weight: 1
+      - path: mesh9
+        weight: 1
+      - path: mesh9/Null.6
+        weight: 1
+      - path: mesh10
+        weight: 1
+      - path: mesh10/Null.5
+        weight: 1
+      - path: mesh11
+        weight: 1
+      - path: mesh11/Null.4
+        weight: 1
+      - path: mesh12
+        weight: 1
+      - path: mesh12/Null.3
+        weight: 1
+      - path: mesh13
+        weight: 1
+      - path: mesh13/Null.2
+        weight: 1
+      - path: mesh14
+        weight: 1
+      - path: mesh14/Null
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: neutro
+      takeName: Take 001
+      firstFrame: 56
+      lastFrame: 65
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
