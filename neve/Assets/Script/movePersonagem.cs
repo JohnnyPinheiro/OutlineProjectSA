@@ -19,10 +19,23 @@ public class movePersonagem : MonoBehaviour {
 		if(Input.GetKey(KeyCode.D)){
 			rigd.velocity = new Vector3(-speed, 0,0);
 			animator.SetBool ("right", true);
+			animator.SetBool("stop", false);
 		}else if(Input.GetKey(KeyCode.A)){
 			rigd.velocity = new Vector3(speed, 0,0);
+			animator.SetBool ("left", true);
+			animator.SetBool("stop", false);
 		}else{
+			animator.SetBool("stop", true);
 			animator.SetBool ("right", false);
+			animator.SetBool ("left", false);
+		}
+
+		if(Input.GetKeyDown(KeyCode.Z)){
+			rigd.AddForce(0, 20,0, ForceMode.Impulse);
+			animator.SetBool("stop", false);
+			animator.SetBool ("right", false);
+			animator.SetBool ("left", false);
+			animator.SetBool ("jump", true);
 		}
 
 	}
