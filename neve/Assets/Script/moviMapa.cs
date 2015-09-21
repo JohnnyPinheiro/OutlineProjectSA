@@ -13,7 +13,7 @@ public class moviMapa : MonoBehaviour {
 	transform.position = new Vector3(transform.position.x, transform.position.y, z);
 	
 	if (transform.position.z >1000){
-		transform.position = new Vector3(transform.position.x, transform.position.y, -1000);
+		transform.position = new Vector3(transform.position.x, transform.position.y, -800);
 			
 		}
 	}
