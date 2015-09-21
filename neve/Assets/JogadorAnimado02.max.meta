@@ -598,7 +598,7 @@ ModelImporter:
     - serializedVersion: 16
       name: pulo
       takeName: Take 001
-      firstFrame: 31
+      firstFrame: 35
       lastFrame: 55
       wrapMode: 0
       orientationOffsetY: 0
