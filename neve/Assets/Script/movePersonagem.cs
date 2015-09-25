@@ -50,6 +50,7 @@ public class movePersonagem : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collisionInfo){
 		if(collisionInfo.gameObject.tag == "Ground"){
+		//so para voltar o pulo
 			jump = false;
 			animator.SetBool("jump", false);
 			print (jump);
