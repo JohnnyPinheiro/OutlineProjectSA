@@ -46,15 +46,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\GameOver.cs" />
      <Compile Include="Assets\Script\Pontos.cs" />
      <Compile Include="Assets\Script\StartGame.cs" />
      <Compile Include="Assets\Script\movePersonagem.cs" />
      <Compile Include="Assets\Script\moviMapa.cs" />
-     <Compile Include="Assets\SimpleCloudSystem by RM\SceneComponents\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Script\movingStone.cs" />
+     <Compile Include="Assets\Script\respawPedra.cs" />
+     <Compile Include="Assets\skibox\SceneComponents\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
-     <None Include="Assets\SimpleCloudSystem by RM\Read Me.txt" />
-     <None Include="Assets\SimpleCloudSystem by RM\SCS Instructions.txt" />
+     <None Include="Assets\skibox\Read Me.txt" />
+     <None Include="Assets\skibox\SCS Instructions.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
