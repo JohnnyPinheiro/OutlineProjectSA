@@ -9,6 +9,9 @@ public class MainStart : MonoBehaviour {
 	public Button characterButton;
 	public Button buttonBack;
 	public Button startGame;
+	public Button shop;
+	public Button ranking;
+
 
 	private int controllerScreens;// 0 =
 
@@ -17,7 +20,6 @@ public class MainStart : MonoBehaviour {
 	//private float z;
 	void start(){
 		controllerScreens = 0;
-
 	}
 
 
@@ -35,39 +37,59 @@ public class MainStart : MonoBehaviour {
 
 	void controllerWindows(){
 		if(controllerScreens == 0){
-			characterButton.interactable = true;
 			buttonBack.interactable = false;
-			startGame.interactable = true;
+			ButtonsMenu(true);
 		}else if(controllerScreens == 1){
 			//character
 			buttonBack.interactable = true;
-			startGame.interactable = false;
+			ButtonsMenu(false);
 		}else if(controllerScreens == 2){
 			//ranking
-			startGame.interactable = false;
+			buttonBack.interactable = true;
+			ButtonsMenu(false);
 		}else if(controllerScreens == 3){
 			//shop
-			startGame.interactable = false;
+			buttonBack.interactable = true;
+			ButtonsMenu(false);
 		}else if(controllerScreens == 4){
 			//play game
 			Application.LoadLevel("Mapa_Jogo");
 		}
 	}
 
-	public void Character(){
-		cam.transform.Translate(0, 12, 0);
-		characterButton.interactable = false;
-		controllerScreens = 1;
-	}
-
 	public void BackWindows(){
 		cam.transform.position = new Vector3(0, 0, 0);
 		buttonBack.interactable = false;
 		controllerScreens = 0;
+			
 	}
+
+	public void Character(){
+		controllerScreens = 1;
+		cam.transform.position = new Vector3(0, 12, 0);
+	}
+
+	public void RankingGame(){
+		controllerScreens = 2;
+		cam.transform.position = new Vector3(20,12, 0);
+	}
+
+	public void ShopGame(){
+		controllerScreens = 3;
+		cam.transform.position = new Vector3(20, 0, 0);
+
+	}	
 
 	public void GameStart(){
 		controllerScreens = 4;
 	}
+
+	void ButtonsMenu(bool id) {
+		characterButton.interactable = id;
+		startGame.interactable = id;
+		shop.interactable = id;
+		ranking.interactable = id;
+	}
+
 
 }
