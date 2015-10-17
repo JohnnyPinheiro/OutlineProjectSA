@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Projetos_Unity\Aula_Camera\cameraSeila\Assets\splash.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\movePersonagem.cs">
     <Files>
-      <File FileName="..\..\Projetos_Unity\Aula_Camera\cameraSeila\Assets\splash.cs" Line="9" Column="12" />
+      <File FileName="Assets\Script\movePersonagem.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
