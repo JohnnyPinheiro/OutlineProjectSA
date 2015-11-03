@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\neve\Assets\Script\movePersonagem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\neve\Assets\Script\VectorMap.cs">
     <Files>
-      <File FileName="..\neve\Assets\Script\movePersonagem.cs" Line="8" Column="21" />
+      <File FileName="..\neve\Assets\Script\movePersonagem.cs" Line="91" Column="3" />
+      <File FileName="..\neve\Assets\Script\Pontos.cs" Line="33" Column="5" />
+      <File FileName="..\neve\Assets\Script\VectorMap.cs" Line="64" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

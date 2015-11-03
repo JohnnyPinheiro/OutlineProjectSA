@@ -4,42 +4,54 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class movePersonagem : MonoBehaviour {
 
-	public Rigidbody rigd;
+	Rigidbody rigd;
 	public float speed;
 	Animator animator;
-	string state;
+	
 	private bool jump;
 	public float gravity;
-	public float speedX;
-	private float speedY;
+	private bool inicio;
 
+	//points
+	public UnityEngine.UI.Text txtPoints;
+	public static  int points;
 	// Use this for initialization
 	void Start () {
+		points = 0;
+		PlayerPrefs.SetInt("points",points);
 		Physics.gravity = new Vector3(0, -gravity, 0);
-		rigd = GetComponent<Rigidbody>();
+		rigd = GetComponentInParent <Rigidbody>();
 		animator = GetComponentInChildren<Animator>();
-		state = "stop";
-		speedY = 0;
+		inicio = false;
 	}
 	
 	void Update () {
+
+		txtPoints.text = points.ToString();
+		//rigd.AddTorque(transform.right*speed);
 		movimentation();
 		MoveJoy();
+
+		if (!inicio && Input.GetMouseButton (0)) {
+			rigd.AddForce(0,0,-10, ForceMode.Impulse);
+			inicio = true;
+		}
+		print(gravity);
 	}
 
 	void movimentation(){
 		if(Input.GetKey(KeyCode.A)){
-			rigd.velocity = new Vector2(speed, rigd.velocity.y);
+			rigd.velocity = new Vector3(speed, rigd.velocity.y,rigd.velocity.z);
 				if(!jump){
 					animator.SetBool("left",true);
 				}
 		}else if(Input.GetKey(KeyCode.D)){
-			rigd.velocity = new Vector2(-speed, rigd.velocity.y);
+			rigd.velocity = new Vector3(-speed, rigd.velocity.y,rigd.velocity.z);
 				if(!jump){
 					animator.SetBool("right",true);
 				}
 		}else{
-			rigd.velocity = new Vector2(0, rigd.velocity.y);
+			rigd.velocity = new Vector3(0, rigd.velocity.y,rigd.velocity.z);
 			animator.SetBool("left", false);
 			animator.SetBool("right",false);
 		}
@@ -57,29 +69,45 @@ public class movePersonagem : MonoBehaviour {
 		//so para voltar o pulo
 			jump = false;
 			animator.SetBool("jump", false);
-			print (jump);
+			Physics.gravity = new Vector3(0, -gravity, 0);
 		}
-		if(collisionInfo.gameObject.tag == "Enemy"){
+		
+		if(collisionInfo.gameObject.tag == "Pedra"){
+			if(points > PlayerPrefs.GetInt("records")){
+			PlayerPrefs.SetInt("records", points);
+			}
 			Application.LoadLevel("GameOver");
+		}
+	}
+
+	void OnTriggerEnter(Collider other){
+		if(other.tag == "Prox"){
+			print("novo mapa");
+		}if(other.tag == "Coin"){
+			print("1 Coin");
+			Destroy(GameObject.FindWithTag("Coin"));
+			Pontos.scores += 1;
 		}
 	}
 
 	void MoveJoy(){
 		if(CrossPlatformInputManager.GetAxis("Horizontal")>0){
-			rigd.velocity = new Vector2(-speed, rigd.velocity.y);
+			rigd.velocity = new Vector3(-speed, rigd.velocity.y,rigd.velocity.z);
 			if(!jump){animator.SetBool("right",true);}
 			
 		}else if(CrossPlatformInputManager.GetAxis("Horizontal")<0){
-			rigd.velocity = new Vector2(speed, rigd.velocity.y);
+			rigd.velocity = new Vector3(speed, rigd.velocity.y,rigd.velocity.z);
 			if(!jump){animator.SetBool("left",true);}
-		}else{
-			print("parado");
 		}
 	}
 
 	public void jumping(){
-		rigd.AddForce(0,15,0, ForceMode.Impulse);
-		jump = true;
-		animator.SetBool("jump", true);
+		if(!jump){
+			rigd.AddForce(0,30,0, ForceMode.Impulse);
+			jump = true;
+			animator.SetBool("jump", true);
+			Physics.gravity = new Vector3(0, -gravity*3, 0);
+			print ("gravity jump " + gravity);
+		}
 	}
 }
