@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{35C84ED5-3D6E-1FE1-7D25-0C8071BA2132}</ProjectGuid>
+	<ProjectGuid>{BFB7BA7D-A8BD-C787-3943-CC198F8374E1}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Colisor.cs" />
      <Compile Include="Assets\Script\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\Script\CrossPlatformInput\Scripts\ButtonHandler.cs" />
      <Compile Include="Assets\Script\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
@@ -59,14 +60,13 @@
      <Compile Include="Assets\Script\GameOver.cs" />
      <Compile Include="Assets\Script\Joystick.cs" />
      <Compile Include="Assets\Script\MainController.cs" />
+     <Compile Include="Assets\Script\Maps.cs" />
      <Compile Include="Assets\Script\Pontos.cs" />
      <Compile Include="Assets\Script\Scene Menus\MainStart.cs" />
      <Compile Include="Assets\Script\Scene Menus\StartGame.cs" />
      <Compile Include="Assets\Script\Scene Menus\moveSplash.cs" />
+     <Compile Include="Assets\Script\VectorMap.cs" />
      <Compile Include="Assets\Script\movePersonagem.cs" />
-     <Compile Include="Assets\Script\moviMapa.cs" />
-     <Compile Include="Assets\Script\movingStone.cs" />
-     <Compile Include="Assets\Script\respawPedra.cs" />
      <Compile Include="Assets\skibox\SceneComponents\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <None Include="Assets\skibox\Read Me.txt" />
      <None Include="Assets\skibox\SCS Instructions.txt" />

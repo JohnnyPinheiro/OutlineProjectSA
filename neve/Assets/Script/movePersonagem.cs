@@ -14,11 +14,11 @@ public class movePersonagem : MonoBehaviour {
 
 	//points
 	public UnityEngine.UI.Text txtPoints;
-	public static  int points;
+	public static  int scores;
 	// Use this for initialization
 	void Start () {
-		points = 0;
-		PlayerPrefs.SetInt("points",points);
+		scores = 0;
+		PlayerPrefs.SetInt("points",scores);
 		Physics.gravity = new Vector3(0, -gravity, 0);
 		rigd = GetComponentInParent <Rigidbody>();
 		animator = GetComponentInChildren<Animator>();
@@ -27,7 +27,7 @@ public class movePersonagem : MonoBehaviour {
 	
 	void Update () {
 
-		txtPoints.text = points.ToString();
+		txtPoints.text = scores.ToString();
 		//rigd.AddTorque(transform.right*speed);
 		movimentation();
 		MoveJoy();
@@ -73,8 +73,9 @@ public class movePersonagem : MonoBehaviour {
 		}
 		
 		if(collisionInfo.gameObject.tag == "Pedra"){
-			if(points > PlayerPrefs.GetInt("records")){
-			PlayerPrefs.SetInt("records", points);
+			PlayerPrefs.SetInt("points",scores);
+			if(scores > PlayerPrefs.GetInt("records")){
+			PlayerPrefs.SetInt("records", scores);
 			}
 			Application.LoadLevel("GameOver");
 		}
